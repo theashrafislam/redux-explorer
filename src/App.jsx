@@ -3,11 +3,9 @@ import Counter from "./Components/Counter";
 import TotalCount from "./Components/TotalCount";
 
 function App() {
-  // State for two counters
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
-  // Total count calculation
   const total = count1 + count2;
 
   return (
