@@ -27,7 +27,7 @@ Redux-Explorer/
 │   ├── components/        # Reusable UI components
 │   ├── Redux/             # Redux store and slices
 │   ├── App.jsx            # Main application entry point
-│   ├── index.js           # React DOM rendering
+│   ├── main.jsx           # React DOM rendering
 │-- public/                # Static assets
 │-- package.json           # Project dependencies and scripts
 │-- README.md              # Documentation file
