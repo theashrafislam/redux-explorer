@@ -1,12 +1,12 @@
 import React from "react";
 import Count from "./Count";
 import Button from "./Button";
-import { useSelector, useDispatch, } from 'react-redux'
+import { useDispatch, } from 'react-redux'
 import { increment, decrement, incrementByAmount, reset } from '../Redux/counterSlice'
 
 const Counter = () => {
   // useSelector hook to access the current state of 'counter' in the Redux store
-  const count = useSelector((state) => state.counter.value);
+  // const count = useSelector((state) => state.counter.value);
 
   // useDispatch hook to get access to the dispatch function for dispatching actions
   const dispatch = useDispatch();
@@ -15,11 +15,22 @@ const Counter = () => {
       <div className="bg-white shadow-xl p-6 rounded-lg text-center">
         <Count />
         <div className="flex gap-4 mt-4">
+
           {/* Button to increase counter by 1 */}
-          <Button type="increase" onClick={() => dispatch(increment())} />
+          <button
+            onClick={() => dispatch(increment())}
+            className="px-4 py-2 text-white bg-green-500 uppercase font-semibold rounded-lg shadow-md transition-all duration-300"
+          >
+            Increase
+          </button>
 
           {/* Button to decrease counter by 1 */}
-          <Button type="decrease" onClick={() => dispatch(decrement())} />
+          <button
+            onClick={() => dispatch(decrement())}
+            className="px-4 py-2 text-white bg-red-500 uppercase font-semibold rounded-lg shadow-md transition-all duration-300"
+          >
+            Decrease
+          </button>
 
           {/* Button to multiply counter by 2 */}
           <button
