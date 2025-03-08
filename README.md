@@ -1,6 +1,6 @@
 # Redux Explorer
 
-![Redux Explorer](https://redux-explorer.vercel.app/favicon.ico)
+![Redux Explorer](https://github.com/user-attachments/assets/658840bd-2e49-49f0-bfcb-29447f6b8caa)
 
 ## 🚀 Live Demo
 🔗 [Redux Explorer](https://redux-explorer.vercel.app/)
